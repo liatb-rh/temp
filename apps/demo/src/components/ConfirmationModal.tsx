@@ -46,6 +46,10 @@ export const ConfirmationModal: React.FC<
     children,
   } = props;
 
+  const dmy = ()=>{
+    alert('ffff');
+  }
+
   return (
     <Modal
       width="24rem"
@@ -67,10 +71,10 @@ export const ConfirmationModal: React.FC<
           variant={primaryButtonVariant}
           isDisabled={isDisabled}
           onClick={onConfirm}
-        >
+        > 
           Confirm
         </Button>
-        {onCancel && (
+        {(
           <Button key="cancel" variant="link" onClick={onCancel}>
             Cancel
           </Button>
