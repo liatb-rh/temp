@@ -1,0 +1,40 @@
+{
+  "name": "@migration-planner-ui/agent-client",
+  "version": "1.0.0-alpha",
+  "description": "A client for Migration Planner Agent API",
+  "author": "Jonathan Kilzi <jkilzi@redhat.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkilzi/migration-planner-ui.git",
+    "directory": "packages/agent-client"
+  },
+  "exports": {
+    "./apis": [
+      "./src/apis/index.ts",
+      "./dist/apis/index.d.ts"
+    ],
+    "./models": [
+      "./src/models/index.ts",
+      "./dist/models/index.d.ts"
+    ]
+  },
+  "typesVersions": {
+    "*": {
+      "apis": [
+        "./src/apis/index.ts",
+        "./dist/apis/index.d.ts"
+      ],
+      "models": [
+        "./src/models/index.ts",
+        "./dist/models/index.d.ts"
+      ]
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn run -T tsc -b",
+    "bundle": "yarn build && yarn pack --out dist/%s-%v.tgz",
+    "clean": "rm -rf node_modules dist",
+    "lint": "yarn run -T eslint . --report-unused-disable-directives --max-warnings 0"
+  }
+}
