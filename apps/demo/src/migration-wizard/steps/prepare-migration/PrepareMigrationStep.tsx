@@ -9,6 +9,10 @@ import {
 
 export const PrepareMigrationStep: React.FC = () => {
 
+  const ttt=()=>{
+    return 1+"fff";
+  }
+
   return (
     <Stack hasGutter>
       <StackItem>
@@ -24,7 +28,7 @@ export const PrepareMigrationStep: React.FC = () => {
       <StackItem>
         <Radio
           id="lets-try"
-          label="Let's try"
+          label={ttt}
           name="lets-try"
           description="Starting with a minimal cluster to try our migration flows and Openshift Virtualization. (20 VMs or up to cluster capacity limitations)"
           checked
