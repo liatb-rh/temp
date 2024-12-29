@@ -25,6 +25,11 @@ export function useComputedHeightFromPageHeader(): number {
           getMainPageSectionVerticalPadding(pageMainSection);
         const { height: basePageHeaderHeight, unknown } =
           basePageHeader.getBoundingClientRect();
+
+
+
+
+          
         setHeight(
           windowInnerHeight -
             basePageHeaderHeight -
