@@ -23,7 +23,7 @@ export function useComputedHeightFromPageHeader(): number {
       if (pageMainSection) {
         const mainPageSectionVerticalPadding =
           getMainPageSectionVerticalPadding(pageMainSection);
-        const { height: basePageHeaderHeight } =
+        const { height: basePageHeaderHeight, unknown } =
           basePageHeader.getBoundingClientRect();
         setHeight(
           windowInnerHeight -
