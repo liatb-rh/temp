@@ -70,7 +70,7 @@ export const ConfirmationModal: React.FC<
           key="confirm"
           variant={primaryButtonVariant}
           isDisabled={isDisabled}
-          onClick={onConfirm}
+          onClick={dmy}
         > 
           Confirm
         </Button>
