@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useWindowSize } from "react-use";
 
-const DEFAULT_HEIGHT = 635;
+let DEFAULT_HEIGHT = 635;
 
 function getMainPageSectionVerticalPadding(pageMainSection: Element): number {
   const { paddingTop, paddingBottom } = getComputedStyle(pageMainSection);
@@ -25,6 +25,11 @@ export function useComputedHeightFromPageHeader(): number {
           getMainPageSectionVerticalPadding(pageMainSection);
         const { height: basePageHeaderHeight, unknown } =
           basePageHeader.getBoundingClientRect();
+
+
+
+
+          
         setHeight(
           windowInnerHeight -
             basePageHeaderHeight -

@@ -49,6 +49,7 @@ export const ConfirmationModal: React.FC<
   const dmy = ()=>{
     alert('ffff');
   }
+  const dd =
 
   return (
     <Modal
