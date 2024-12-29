@@ -1,0 +1,5 @@
+rules:
+  - enforce_code_style: true
+  - max_line_length: 80
+notifications:
+  - email: true
